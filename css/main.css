@@ -1,7 +1,33 @@
+/*通用*/
 .section-header{
     text-align: center;
     margin-bottom:30px;
 }
+
+
+
+/*微軟正黑體好看*/
+
+body,
+input,
+button,
+select,
+textarea {
+    font-family: "微軟正黑體";
+}
+
+.tag {
+    background-color: #f04646;
+    border-radius: 15px;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 8px;
+    color:white;
+    margin:5px;
+    
+}
+/*通用 end*/
+
 /*Header 開始*/
 /*Hello文字 小螢幕時置中*/
 nav{
@@ -81,16 +107,6 @@ a:hover {
 }
 
 
-/*微軟正黑體好看*/
-
-body,
-input,
-button,
-select,
-textarea {
-    font-family: "微軟正黑體";
-}
-
 
 /* Header 結束 */
 
@@ -115,5 +131,7 @@ div.portfolio>div.portfolio-header:before {
     clear: both;
 }
 
-
+div.portfolio div.portfolio-img{
+    padding:5px 5px;
+}
 /* Portfolio 結束 */
