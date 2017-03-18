@@ -1,4 +1,31 @@
+.section-header{
+    text-align: center;
+    margin-bottom:30px;
+}
 /*Header 開始*/
+/*Hello文字 小螢幕時置中*/
+nav{
+    margin-top:30px;
+}
+.header-cover{
+   padding:30px 15px;
+   height:400px;
+    background-image: url(../img/background.jpg);
+
+  -webkit-background-size: 100% 400px;
+  -moz-background-size: 100% 400px;
+  -o-background-size: 100% 400px;
+  background-size: 100% 400px
+}
+.jason-hello{
+    text-align:center;
+    font-size:2em;
+    background-color:rgba(0,0,0, 0.5);
+    color:white;
+    text-shadow: 0 2px 4px rgba(255,255,255,.5);
+
+}
+
 
 .card,
 .card:hover {
@@ -13,10 +40,12 @@
     height: 3em;
     line-height: 3em;
     text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+    font-weight: 700;
     font-size: 1.6em;
     background: hsla(133, 100%, 25%, 0.65);
-    color: #000;
-    margin-top: 40px;
+    color: white;
+    margin-top: 20px;
 }
 
 a,
@@ -59,7 +88,7 @@ input,
 button,
 select,
 textarea {
-    font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+    font-family: "微軟正黑體";
 }
 
 
@@ -68,13 +97,15 @@ textarea {
 
 /* Portfolio 開始 */
 
+
 div.portfolio {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    margin-bottom:30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.portfolio>div.portfolio-header {
-    color: #fff!important;
-    background-color: #2196F3!important;
+    color: #fff;
+    background-color: #2196F3;
 }
 
 div.portfolio>div.portfolio-header:after,
