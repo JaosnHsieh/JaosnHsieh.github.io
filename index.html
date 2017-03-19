@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="zh-Hant">
 <!--<![endif]-->
 
 <head>
@@ -20,6 +20,10 @@
 </head>
 
 <body>
+  <ul class="list-inline lang-bar">
+    <li id="switcher-zh"><a href="#"  class="lang-tag lang-active">中文</a></li>
+    <li id="switcher-en"><a href="#"  class="lang-tag">English</a></li>
+  </ul>
   <header>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -35,7 +39,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12 text-center">
-            <span class="jason-hello">哈囉 我是小謝</span>
+            <span class="jason-hello" data-en="Hello I'm Jason A Web Developer" data-zh="Hi 我是小謝 網站開發者">哈囉 我是小謝 網站開發者</span>
           </div>
         </div>
         <nav>
@@ -43,17 +47,17 @@
             <div class="row">
               <a href="#mywork">
                 <div class="col-xs-4">
-                  <div class="card card-panel">作品</div>
+                  <div class="card card-panel" data-en="WORKS" data-zh="作品">作品</div>
                 </div>
               </a>
               <a href="#record">
                 <div class="col-xs-4">
-                  <div class="card card-panel">足跡</div>
+                  <div class="card card-panel" data-en="FOOTPRINTS" data-zh="足跡">足跡</div>
                 </div>
               </a>
               <a href="#resume">
                 <div class="col-xs-4">
-                  <div class="card card-panel">履歷</div>
+                  <div class="card card-panel" data-en="RESUME" data-zh="履歷">履歷</div>
                 </div>
               </a>
             </div>
@@ -65,7 +69,7 @@
   <!--portfolio-->
   <section id="mywork" class="portfolio">
     <div class="container">
-      <h1 class="section-header">作品</h1>
+      <h1 class="section-header" data-en="WORKS" data-zh="作品">作品</h1>
       <div class="row">
         <div class="col-md-4">
           <div class="portfolio">
@@ -172,13 +176,13 @@
   <!--path-->
   <section id="record">
     <div class="container">
-      <h1 class="section-header">足跡</h1>
+      <h1 class="section-header" data-en="FOOTPRINTS" data-zh="足跡">足跡</h1>
       <div class="row">
         <div class="col-sm-6">
           <a href="http://www.evernote.com/l/AGcd1pMXjcBIXavGFF1Q33Dh5Q0Rrq2osCw/" target="_blank">
             <div class="portfolio">
               <div class="portfolio-header text-center">
-                <h1>工作筆記</h1>
+                <h1 data-en="Notes" data-zh="工作筆記">工作筆記</h1>
               </div>
               <div class="portfolio-img"><img src="./img/evernote.png" alt="" class="img-responsive center-block"></div>
             </div>
@@ -222,7 +226,7 @@
   <!--resume-->
   <section id="resume" class="resume">
     <div class="container">
-      <h1 class="section-header">履歷</h1>
+      <h1 class="section-header" data-en="RESUME" data-zh="履歷">履歷</h1>
       <div class="row">
         <div class="col-sm-6">
           <a href=" https://goo.gl/2leuoP" target="_blank">
@@ -250,22 +254,12 @@
   <!--resume end-->
   <!-- /container -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
   <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-    //simple smooth scroll
-    var $root = $('html, body');
-    $('nav a').click(function () {
-      // alert(123);
-      var href = $.attr(this, 'href');
-      $root.animate({
-        scrollTop: $(href).offset().top
-      }, 500, function () {
-        window.location.hash = href;
-      });
-      return false;
-    });
-    //simple smooth scroll end
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>');
+    window.Cookies || document.write('<script src="js/js.cookie.min.js"><\/script>');
   </script>
+ 
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>

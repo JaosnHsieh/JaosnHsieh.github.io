@@ -16,7 +16,7 @@ textarea {
     font-family: "微軟正黑體";
 }
 
-.tag {
+.tag{
     background-color: #f04646;
     border-radius: 15px;
     display: inline-block;
@@ -26,6 +26,41 @@ textarea {
     margin:5px;
     
 }
+
+/*lang bar*/
+
+.lang-tag,
+a.lang-tag,
+a:visited.lang-tag,
+a:visited.lang-tag,
+a:active.lang-tag,
+a:hover.lang-tag{
+    border-radius: 15px;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 8px;
+    color:white;
+    margin:5px;
+}
+.lang-active{
+    background-color: #f04646;
+}
+.lang-bar{
+    position:absolute;
+    right:0;
+    top:10px;
+    padding-right:50px;
+}
+
+@media screen and (max-width: 767px) {
+    .lang-bar{
+     top:5px;
+    padding-right:5px;
+}
+}
+
+/*lang bar end*/
+  
 /*通用 end*/
 
 /*Header 開始*/
@@ -45,10 +80,11 @@ nav{
 }
 .jason-hello{
     text-align:center;
-    font-size:2em;
+    font-size:1.5em;
     background-color:rgba(0,0,0, 0.5);
     color:white;
     text-shadow: 0 2px 4px rgba(255,255,255,.5);
+    padding:2px 20px;
 
 }
 
@@ -90,8 +126,10 @@ a:hover {
         padding: 0 1px;
     }
     .card-panel {
-        font-size: 1.15em;
+        font-size: 1em;
     }
+
+    nav .col-xs-4{padding:1.5px;}
 }
 
 
@@ -99,9 +137,9 @@ a:hover {
 
 @media screen and (max-width: 320px) {
     .card-panel {
-        font-size: 1em;
+        font-size: 0.6em;
     }
-    .col-xs-3 {
+    .col-xs-4 {
         padding: 0.5px;
     }
 }
