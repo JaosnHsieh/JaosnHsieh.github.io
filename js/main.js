@@ -26,14 +26,14 @@ if (Cookies.get("lang") == "zh") {
   $("#switcher-zh a").removeClass("lang-active");
 
   $('[data-en]').each(function () {
-    $(this).html($(this).data("en"));
+    $(this).text($(this).data("en"));
   });
 }
 $("#switcher-zh").on("click", function () {
   Cookies.set("lang", "zh", { expires: 365 });
 
   $('[data-zh]').each(function () {
-    $(this).html($(this).data("zh"));
+    $(this).text($(this).data("zh"));
   });
 
 
