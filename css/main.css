@@ -32,7 +32,6 @@ textarea {
 .lang-tag,
 a.lang-tag,
 a:visited.lang-tag,
-a:visited.lang-tag,
 a:active.lang-tag,
 a:hover.lang-tag{
     border-radius: 15px;
@@ -51,6 +50,7 @@ a:hover.lang-tag{
     top:10px;
     padding-right:50px;
 }
+/*lang bar end*/
 
 @media screen and (max-width: 767px) {
     .lang-bar{
@@ -174,3 +174,26 @@ div.portfolio div.portfolio-img{
     padding:5px 5px;
 }
 /* Portfolio 結束 */
+
+/*footer*/
+footer{
+    padding:25px;
+    background-color:hsla(133, 100%, 25%, 0.65);
+    color:white;
+}
+footer a,
+footer a:visited,
+footer a:active,
+footer a:hover ,
+footer a:focus {
+    color:white;
+    text-decoration: none!important;
+}
+.fa-envelope{
+    padding:0 5px;
+}
+.fa-heart{
+    color:red;
+    padding:5px;
+}
+/*footer end*/
