@@ -171,8 +171,31 @@ div.portfolio>div.portfolio-header:before {
 }
 
 div.portfolio div.portfolio-img{
+    position: relative;
     padding:5px 5px;
 }
+
+.slide-description{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:#222;
+    opacity:0.89;
+    z-index:14;
+    display:none;
+}
+.slide-description p{
+    padding:15px;
+    font-size:1.2em;
+    color:white;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+
+
 /* Portfolio 結束 */
 
 /*footer*/

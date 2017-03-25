@@ -61,3 +61,12 @@ $("#switcher-en").on("click", function () {
 
 
 //language switch end
+
+//portofolio slide description effect
+
+$(".portfolio").hover(function(){
+  $(this).find("div.slide-description").slideToggle();
+});
+
+
+//portofolio slide description effect END
