@@ -1,10 +1,8 @@
 /*通用*/
-.section-header{
-    text-align: center;
-    margin-bottom:30px;
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
 }
-
-
 
 /*微軟正黑體好看*/
 
@@ -13,18 +11,17 @@ input,
 button,
 select,
 textarea {
-    font-family: "微軟正黑體";
+  font-family: "微軟正黑體";
 }
 
-.tag{
-    background-color: #f04646;
-    border-radius: 15px;
-    display: inline-block;
-    line-height: 20px;
-    padding: 0 8px;
-    color:white;
-    margin:5px;
-    
+.tag {
+  background-color: #f04646;
+  border-radius: 15px;
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 8px;
+  color: white;
+  margin: 5px;
 }
 
 /*lang bar*/
@@ -33,190 +30,187 @@ textarea {
 a.lang-tag,
 a:visited.lang-tag,
 a:active.lang-tag,
-a:hover.lang-tag{
-    border-radius: 15px;
-    display: inline-block;
-    line-height: 20px;
-    padding: 0 8px;
-    color:white;
-    margin:5px;
+a:hover.lang-tag {
+  border-radius: 15px;
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 8px;
+  color: white;
+  margin: 5px;
 }
-.lang-active{
-    background-color: #f04646;
+.lang-active {
+  background-color: #f04646;
 }
-.lang-bar{
-    position:absolute;
-    right:0;
-    top:10px;
-    padding-right:50px;
+.lang-bar {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  padding-right: 50px;
 }
 /*lang bar end*/
 
 @media screen and (max-width: 767px) {
-    .lang-bar{
-     top:5px;
-    padding-right:5px;
-}
+  .lang-bar {
+    top: 5px;
+    padding-right: 5px;
+  }
 }
 
 /*lang bar end*/
-  
+
 /*通用 end*/
 
 /*Header 開始*/
 /*Hello文字 小螢幕時置中*/
-nav{
-    margin-top:30px;
+nav {
+  margin-top: 30px;
 }
-.header-cover{
-   padding:30px 15px;
-   height:400px;
-    background-image: url(../img/background.jpg);
+.header-cover {
+  padding: 30px 15px;
+  height: 400px;
+  background-image: url(../img/background.jpg);
 
   -webkit-background-size: 100% 400px;
   -moz-background-size: 100% 400px;
   -o-background-size: 100% 400px;
-  background-size: 100% 400px
+  background-size: 100% 400px;
 }
-.jason-hello{
-    text-align:center;
-    font-size:1.5em;
-    background-color:rgba(0,0,0, 0.5);
-    color:white;
-    text-shadow: 0 2px 4px rgba(255,255,255,.5);
-    padding:0 20px;
-    box-sizing: border-box;
-
+.jason-hello {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-
 
 .card,
 .card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .card:hover {
-    background: hsla(133, 100%, 25%, 0.9);
+  background: hsla(133, 100%, 25%, 0.9);
 }
 
 .card-panel {
-    height: 3em;
-    line-height: 3em;
-    text-align: center;
-    text-shadow: 0 2px 4px rgba(0,0,0,.5);
-    font-weight: 700;
-    font-size: 1.6em;
-    background: hsla(133, 100%, 25%, 0.65);
-    color: white;
-    margin-top: 20px;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 1.6em;
+  background: hsla(133, 100%, 25%, 0.65);
+  color: white;
+  margin-top: 20px;
 }
 
 a,
 a:visited,
 a:active,
 a:hover {
-    color: #000;
-    text-decoration: none!important;
+  color: #000;
+  text-decoration: none !important;
 }
-
 
 /*small-device時改小padding*/
 
 @media screen and (max-width: 767px) {
-    .col-xs-3 {
-        padding: 0 1px;
-    }
-    .card-panel {
-        font-size: 1em;
-    }
+  .col-xs-3 {
+    padding: 0 1px;
+  }
+  .card-panel {
+    margin-top: 2px;
+    line-height: 1.5em;
+    height: 1.5em;
+  }
 
-    nav .col-xs-4{padding:1.5px;}
+  nav .col-xs-4 {
+    padding: 1.5px;
+  }
 }
-
 
 /*小螢幕時字體小一點 不然字會wrap...*/
 
 @media screen and (max-width: 320px) {
-    .card-panel {
-        font-size: 0.6em;
-    }
-    .col-xs-4 {
-        padding: 0.5px;
-    }
+  .card-panel {
+    margin-top: 2px;
+    line-height: 1.5em;
+    height: 1.5em;
+  }
+  .col-xs-4 {
+    padding: 0.5px;
+  }
 }
-
-
 
 /* Header 結束 */
 
-
 /* Portfolio 開始 */
 
-
 div.portfolio {
-    margin-bottom:30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div.portfolio>div.portfolio-header {
-    color: #fff;
-    background-color: #2196F3;
+div.portfolio > div.portfolio-header {
+  color: #fff;
+  background-color: #2196f3;
 }
 
-div.portfolio>div.portfolio-header:after,
-div.portfolio>div.portfolio-header:before {
-    content: "";
-    display: table;
-    clear: both;
+div.portfolio > div.portfolio-header:after,
+div.portfolio > div.portfolio-header:before {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-div.portfolio div.portfolio-img{
-    position: relative;
-    padding:5px 5px;
+div.portfolio div.portfolio-img {
+  position: relative;
+  padding: 5px 5px;
 }
 
-.slide-description{
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background-color:#222;
-    opacity:0.89;
-    z-index:14;
-    display:none;
+.slide-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+  opacity: 0.89;
+  z-index: 14;
+  display: none;
 }
-.slide-description p{
-    padding:15px;
-    font-size:1.2em;
-    color:white;
-    position:absolute;
-    left:0;
-    bottom:0;
+.slide-description p {
+  padding: 15px;
+  font-size: 1.2em;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-
 
 /* Portfolio 結束 */
 
 /*footer*/
-footer{
-    padding:25px;
-    background-color:hsla(133, 100%, 25%, 0.65);
-    color:white;
+footer {
+  padding: 25px;
+  background-color: hsla(133, 100%, 25%, 0.65);
+  color: white;
 }
 footer a,
 footer a:visited,
 footer a:active,
-footer a:hover ,
+footer a:hover,
 footer a:focus {
-    color:white;
-    text-decoration: none!important;
+  color: white;
+  text-decoration: none !important;
 }
-.fa-envelope{
-    padding:0 5px;
+.fa-envelope {
+  padding: 0 5px;
 }
-.fa-heart{
-    color:red;
-    padding:5px;
+.fa-heart {
+  color: red;
+  padding: 5px;
 }
 /*footer end*/
